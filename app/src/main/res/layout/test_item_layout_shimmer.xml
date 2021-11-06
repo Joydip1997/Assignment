@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginBottom="4dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            >
+
+            <TextView
+                android:id="@+id/test_item_title_shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/dark_grey"
+                android:text="3. Test 248" />
+
+            <TextView
+                android:id="@+id/date_tv_shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:drawablePadding="8dp"
+                android:background="@color/dark_grey"
+                android:textColor="@color/dark_grey"
+                android:text="2021 Jan 12"
+                app:layout_constraintEnd_toStartOf="@+id/menu_options_shimmer"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/menu_options_shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@color/dark_grey"
+                app:layout_constraintBottom_toBottomOf="@+id/date_tv_shimmer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/date_tv_shimmer" />
+
+            <!--    <androidx.constraintlayout.motion.widget.MotionLayout-->
+            <!--        android:layout_width="100dp"-->
+            <!--        android:layout_height="100dp"-->
+            <!--        app:layout_constraintEnd_toEndOf="@+id/menu_options"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/menu_options"-->
+            <!--        app:layoutDescription="@xml/test_item_layout_scene">-->
+
+            <!--        <include-->
+            <!--            android:id="@+id/menu_option_layout"-->
+            <!--            layout="@layout/option_menu_layout" />-->
+
+
+            <!--    </androidx.constraintlayout.motion.widget.MotionLayout>-->
+
+
+            <TextView
+                android:id="@+id/textView_shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Test Series:"
+                android:background="@color/dark_grey"
+                android:textColor="@color/dark_grey"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/test_item_title_shimmer"
+                app:layout_constraintTop_toBottomOf="@+id/test_item_title_shimmer" />
+
+            <TextView
+                android:id="@+id/test_series_name_tv_shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="NTA Abhyas"
+                android:background="@color/dark_grey"
+                android:textColor="@color/dark_grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_shimmer"
+                app:layout_constraintStart_toEndOf="@+id/textView_shimmer"
+                app:layout_constraintTop_toTopOf="@+id/textView_shimmer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_shimmer">
+
+                <include
+
+                    layout="@layout/subject_score_item_shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <include
+
+                    layout="@layout/subject_score_item_shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+                <include
+
+                    layout="@layout/subject_score_item_shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+                <include
+
+                    layout="@layout/subject_score_item_shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

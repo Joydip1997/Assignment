@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:drawablePadding="4dp"
+        android:background="@color/dark_grey"
+        android:textColor="@color/dark_grey"
+        android:text="Physics"
+  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90/100"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/dark_grey"
+        android:background="@color/dark_grey"
+        />
+
+
+</LinearLayout>

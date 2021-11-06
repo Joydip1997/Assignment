@@ -1,0 +1,57 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.2"
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.1"
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.40'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = "23"
+    targetSdkVersion = 30
+    compileSdkVersion = 30
+
+    // App version
+    versionCode = 103
+    versionName = "3.13.0"
+
+
+    // App dependencies
+    androidXLegacySupport = '1.0.0'
+    appCompatVersion = '1.2.0'
+    swipeRefreshVersion = '1.1.0'
+    multidexVersion = '2.0.1'
+    androidKtxVersion = '1.3.2'
+    activityKtxVersion = '1.2.0'
+    fragmentKtxVersion = '1.3.0'
+    cardViewVersion = '1.0.0'
+    recyclerViewVersion = '1.2.0-beta02'
+    materialVersion = '1.4.0-alpha01'
+    constraintVersion = '2.0.4'
+    shimmerVersion = '0.5.0'
+    otpViewVersion = 'v1.1.2-ktx'
+    glideVersion = '4.11.0'
+    okHttpVersion = '4.9.0'
+    retrofitVersion = '2.9.0'
+    firebaseVersion = '28.4.0'
+    coroutinesVersion = '1.4.2'
+    archLifecycleVersion = '2.3.0'
+    archLifecycleExtension = '2.2.0'
+    archNavigationVersion = '2.3.5'
+    archPagingVersion = '3.0.0-beta01'
+    awsVersion = '2.6.+'
+}

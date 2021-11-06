@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragmentTestList">
+
+    <fragment
+        android:id="@+id/fragmentTestList"
+        android:name="com.example.assignment.UI.FragmentTestList"
+        android:label="fragment_test_list"
+        tools:layout="@layout/fragment_test_list" >
+        <action
+            android:id="@+id/action_fragmentTestList_to_fragmentTestAddEdit"
+            app:destination="@id/fragmentTestAddEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTestAddEdit"
+        android:name="com.example.assignment.UI.FragmentTestAddEdit"
+        android:label="FragmentTestAddEdit"
+        tools:layout="@layout/fragment_add_edit_test">
+        <argument
+            android:name="test_id"
+            app:argType="string" />
+        <argument
+            android:name="addNewTestScore"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="testName"
+            app:argType="string" />
+    </fragment>
+</navigation>
